@@ -56,7 +56,7 @@ if [ -f "$SERVICEBIN" ]; then
 fi
 
 echo "configuring service..."
-cat </etc/systemd/system/${SERVICENAME}.service
+cat <<EOF | sudo tee /etc/systemd/system/${SERVICENAME}.service > /dev/null
 [Unit]
 Description=${SERVICENAME}
 After=network.target
