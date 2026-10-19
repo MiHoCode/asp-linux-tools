@@ -9,7 +9,7 @@ fi
 SRC="https://raw.githubusercontent.com/MiHoCode/asp-linux-tools/main/scripts/"
 
 # Hier einfach neue Skripte ergänzen:
-SCRIPTS="asp_create_service.sh asp_create_webserver.sh"
+SCRIPTS="asp_create_service.sh asp_create_webserver.sh asp_create_webserver_local.sh"
 
 for SCRIPT in $SCRIPTS; do
   echo "Installing $SCRIPT ..."
